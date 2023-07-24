@@ -33,4 +33,4 @@ fi
 
 echo -e "quit;\n" >> rmcmd
 
-lftp  $INPUT_HOST $INPUT_OPTIONS < rmcmd
+lftp  $INPUT_HOST:$INPUT_PORT $INPUT_OPTIONS < rmcmd
