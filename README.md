@@ -28,6 +28,7 @@ jobs:
         host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        port: ${{ secrets.FTP_PORT }}
         remoteFiles: "precache-manifest.*.js;logs/*.log"
         remoteDirectories: "/App_Data/TEMP"
         workingDir: "/public_html"
@@ -43,6 +44,7 @@ Input parameter | Description | Required | Example
 --- | --- | --- | ---
 host | FTP server name | Yes | ftp.domain.com
 user | FTP username | Yes | ftpUser
+port | FTP port | Yes | 21
 password | FTP password | Yes | secureFtpPassword
 remoteFiles | Files to delete separated by ";" | Yes | `precache-manifest.*.js;logs/*.log`
 remoteDirectories | Directories to delete separated by ";" | No | `/App_Data/TEMP`
