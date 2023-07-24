@@ -11,6 +11,9 @@ inputs:
   password:
     description: 'FTP password'
     required: true
+  port:
+    description: 'FTP port'
+    required: true
   remoteFiles:
     description: 'Remote files separated by ; (wildcards accepted)'
     required: true
